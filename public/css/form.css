@@ -1,0 +1,230 @@
+/* Login/Inscription */
+.bodyLoginInscription {
+  background: rgb(196, 34, 86);
+  background: linear-gradient(
+    0deg,
+    rgba(196, 34, 86, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+/* Dashboard */
+.bodyAdmin{
+  background: #EFF8E2;
+  font-family: "Roboto", sans-serif;
+}
+.bodyModification {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  
+}
+.adminInfo2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+}
+.adminTitles{
+  color: black;
+  font-size: 1rem;
+}
+/* Formulaire login/inscription/ modifier */
+.secLogin,
+.secInscriription,
+.secModifier {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7vh;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 4rem;
+  padding-top: 1rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15.6px);
+  -webkit-backdrop-filter: blur(15.6px);
+}
+.formInscription {
+  padding: 2rem;
+
+}
+.formModification {
+  padding: 2rem;
+  background: #FFFFFF;
+
+}
+
+.GMAE-Logo {
+  width: 250px;
+}
+.input {
+  padding: 1rem;
+  width: 20vw;
+  border-radius: 0.8rem;
+  border: 2px solid black;
+}
+.input:focus {
+  outline: none;
+}
+.reponseSecrete {
+  height: 3rem;
+}
+.divPassModifier {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.text-Modifier {
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+.submit {
+  margin-top: 2vh;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: white;
+  border: 2px solid #c42256;
+  color: #c42256;
+}
+.submit:hover {
+  background-color: rgb(196, 34, 86);
+  color: white;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.submitInscription {
+  margin-top: 3vh;
+}
+.submitAjouterCréer:hover{
+ background: #55A630;
+  ;
+}
+
+.submitModifierAdmin:hover{
+  background: #3A86FF;
+
+}
+
+.divPartenaireModifier,
+.divPartenaireUtilisateur{
+overflow-y: scroll;
+height: 5rem;
+width: 80%;
+border: 2px solid black;
+border-radius: 0.8rem;
+width: 20vw;
+padding: 1rem;
+}
+.textSup1{
+  margin-right:4rem;
+}
+.textSup2{
+  margin-right:6.5rem;
+}
+/* footer */
+.footer{
+    margin-top: 10%;
+}
+.copyright {
+  background-color: #3a3a3a;
+  color: white;
+  text-align: center;
+  padding: 0.7rem;
+  letter-spacing: 2px;
+  font-family: "Libre Baskerville", serif;
+}
+
+.liste_users
+{
+  display: flex;
+  border-bottom: solid 1px black;
+  width: 100%;
+}
+.liste_users > p
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 50%;
+}
+
+
+/* responsive */
+@media screen and (max-width: 760px) {
+  .secLogin {
+    padding-top: 8vh;
+  }
+  .form {
+    gap: 15px;
+    padding: 2rem 0.5rem;
+  }
+  .userLogo {
+    width: 150px;
+  }
+  .input {
+    padding: 1rem;
+    width: 80%;
+    
+  }
+  .submit {
+    margin-top: 2vh;
+  }
+  .copyright {
+    padding: 0.4rem;
+  }
+.divModifier{
+  width: 100%;
+}
+  .bodyModification {
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .formModification,.formInscription{
+    width: 85%;
+  }
+  .adminModif{
+    padding:1rem;
+  }
+  .text-Modifier {
+    margin-bottom: 5px;
+   margin-left:2rem;
+  }
+  .adminInfo1 {
+    width: 100%;
+
+  }
+  .adminInfo2{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .divPartenaireModifier,
+  .divPartenaireUtilisateur{
+    width: 80%;
+  }
+  .textSup1,.textSup2{
+    margin-right:0;
+  }
+ 
+}
